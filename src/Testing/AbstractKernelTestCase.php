@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Symplify\PackageBuilder\Tests;
+namespace Symplify\PackageBuilder\Testing;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
