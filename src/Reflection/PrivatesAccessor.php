@@ -14,7 +14,7 @@ use Symplify\PHPStanRules\Exception\ShouldNotHappenException;
 final class PrivatesAccessor
 {
     /**
-     * @template T of object
+     * @template T as object
      *
      * @param class-string<T> $valueClassName
      * @return T
@@ -42,7 +42,7 @@ final class PrivatesAccessor
     }
 
     /**
-     * @template T of object
+     * @template T
      *
      * @param class-string<T> $valueClassName
      * @param T $value
