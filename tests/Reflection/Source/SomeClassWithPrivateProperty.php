@@ -14,7 +14,7 @@ final class SomeClassWithPrivateProperty extends AbstractPrivateProperty
     private $value = 5;
 
     /**
-     * @var stdClass $object
+     * @var stdClass
      */
     private $object;
 
@@ -28,7 +28,7 @@ final class SomeClassWithPrivateProperty extends AbstractPrivateProperty
         return $this->value;
     }
 
-    public function getObject() : stdClass
+    public function getObject(): stdClass
     {
         return $this->object;
     }

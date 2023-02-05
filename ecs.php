@@ -16,6 +16,7 @@ return static function (ECSConfig $ecsConfig): void {
 
     $ecsConfig->sets([
         SetList::COMMON,
+        SetList::CLEAN_CODE,
         SetList::PSR_12,
     ]);
 };

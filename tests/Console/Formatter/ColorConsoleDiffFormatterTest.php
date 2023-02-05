@@ -6,6 +6,7 @@ namespace Symplify\PackageBuilder\Tests\Console\Formatter;
 
 use Iterator;
 use Nette\Utils\FileSystem;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Symplify\PackageBuilder\Console\Formatter\ColorConsoleDiffFormatter;
 
@@ -18,9 +19,7 @@ final class ColorConsoleDiffFormatterTest extends TestCase
         $this->colorConsoleDiffFormatter = new ColorConsoleDiffFormatter();
     }
 
-    /**
-     * @dataProvider provideData()
-     */
+    #[DataProvider('provideData')]
     public function test(string $content, string $expectedFormatedFileContent): void
     {
         $formattedContent = $this->colorConsoleDiffFormatter->format($content);
@@ -28,7 +27,7 @@ final class ColorConsoleDiffFormatterTest extends TestCase
         $this->assertStringEqualsFile($expectedFormatedFileContent, $formattedContent);
     }
 
-    public function provideData(): Iterator
+    public static function provideData(): Iterator
     {
         yield ['...', __DIR__ . '/Source/expected/expected.txt'];
         yield ["-old\n+new", __DIR__ . '/Source/expected/expected_old_new.txt'];
