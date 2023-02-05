@@ -16,9 +16,3 @@ parameters:
         constants: true
 
     ignoreErrors:
-        - '#Calling PHPStan\\Testing\\ErrorFormatterTestCase\:\:(getOutputContent|getOutput|getAnalysisResult)|\(\) is not covered by backward compatibility promise\. The method might change in a minor PHPStan version#'
-        - '#Extending PHPStan\\Testing\\ErrorFormatterTestCase is not covered by backward compatibility promise\. The class might change in a minor PHPStan version#'
-
-        -
-            path: src/ErrorFormatter/SymplifyErrorFormatter.php
-            message: '#Cannot call method writeLineFormatted\(\) on PHPStan\\Command\\Output\|null#'
