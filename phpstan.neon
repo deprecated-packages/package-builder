@@ -1,6 +1,3 @@
-includes:
-    - config/config.neon
-
 parameters:
     level: 8
 
