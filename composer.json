@@ -9,6 +9,7 @@
         "symfony/config": "^6.2",
         "symfony/console": "^6.2",
         "symfony/dependency-injection": "^6.2",
+        "symfony/http-kernel": "^6.2",
         "symfony/finder": "^6.2"
     },
     "require-dev": {
