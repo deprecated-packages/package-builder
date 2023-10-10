@@ -2,7 +2,7 @@
 
 [![Downloads total](https://img.shields.io/packagist/dt/symplify/package-builder.svg?style=flat-square)](https://packagist.org/packages/symplify/package-builder/stats)
 
-This tools helps you with Collectors in DependecyInjection, Console shortcuts, ParameterProvider as service and many more.
+This tools helps you with Collectors in DependencyInjection, Console shortcuts, ParameterProvider as service and many more.
 
 ## Install
 
